@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.global-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0px auto;
+}
+
+.step-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto 20px auto;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid black;
+  justify-content: center;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: large;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.step-1-complete,
+.step-2-complete,
+.step-3-complete {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border: 1px solid black;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: large;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.step-line {
+  height: 5px;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  background: #fff;
+  width: calc(400px - 40px);
+}
+
+.step-line-complete {
+  height: 5px;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  background: #000;
+  width: calc(400px - 40px);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  /* height: 300px; */
+  height: 400px;
+  margin: 50px auto;
+  padding: 18px;
+  border: 1px solid #000;
+}
+
+/* .form-container:last-child{
+    margin: 30px auto;
+} */
+
+.main-text {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: large;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  height: 35px;
+  font-size: medium;
+  padding: 2;
+}
+
+.btn-next,
+.btn-prev {
+  margin: 10px auto;
+  background: #000;
+  color: #fff;
+  line-height: 30px;
+  font-size: xx-large;
+  /* width: 120px; */
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-grp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+  margin: 20px auto;
+}
+
+.submission-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  /* height: 300px; */
+  height: 400px;
+  margin: 50px auto;
+  padding: 18px;
+  /* border: 1px solid #000; */
+  font-size: 44px;
+  font-weight: 600;
+  transition: ease-in-out;
+}
